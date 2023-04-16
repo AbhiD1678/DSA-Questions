@@ -65,6 +65,7 @@ class Node{
  ```
     
 ## Pop method
+It is used to remove the right most item and set the item before it as tail,it is O(n) method
 ```
 pop (){
   if(!this.head) return undefined
