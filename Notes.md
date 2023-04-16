@@ -116,3 +116,15 @@ shift (){
   }
   return temp
 }
+### Get method 
+This method is used to get the value of node at a given index
+```
+get(index){
+  if(index<0||index>this.length){
+  return undefined
+  }
+  let temp=this.head
+  for(i=0;i<index;i++){
+    temp=temp.next
+  }return temp
+  }
