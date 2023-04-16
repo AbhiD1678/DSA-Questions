@@ -85,3 +85,19 @@ pop (){
     return temp
     }
 ```
+## Unshift method
+This method is used to add items to a linkedlist from leftside and set it as head.
+```
+unshift (){
+  const newNode=new Node(value)
+  if(!this.head){
+    this.head=newNode
+    this.tail=newNode
+    }
+   else{
+    newNode.next=this.head
+    this.head=newNode
+    }
+    this.length++
+    return this
+}
