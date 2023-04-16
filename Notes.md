@@ -11,7 +11,7 @@ O(n^2),this for loop within loop
 
 # LinkedList
 
-class Node {
+'''class Node {
   constructor(value){
     this.value=value
     this.next=null
@@ -25,6 +25,7 @@ class LinkedList {
     this.length=1
   }
  }
+ '''
  
  # Methods for linkedlist
  
