@@ -11,7 +11,8 @@ O(n^2),this for loop within loop
 
 # LinkedList
 
-'''class Node {
+```
+class Node {
   constructor(value){
     this.value=value
     this.next=null
@@ -25,14 +26,15 @@ class LinkedList {
     this.length=1
   }
  }
- '''
+ ```
  
  # Methods for linkedlist
  
  ## Push Method
  It is used to push items in linkedlist from rightside,O(1) operation
  
- class Node{
+```
+class Node{
   constructor(value){
     this.value=value
     this.next=null
@@ -60,9 +62,11 @@ class LinkedList {
       return this 
       }
       }
+ ```
     
 ## Pop method
- pop (){
+```
+pop (){
   if(!this.head) return undefined
   let pre = this.head
   let temp = this.head
@@ -79,3 +83,4 @@ class LinkedList {
     }
     return temp
     }
+```
