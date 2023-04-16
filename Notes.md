@@ -28,9 +28,9 @@ class LinkedList {
  }
  ```
  
- # Methods for linkedlist
+ ## Methods for linkedlist
  
- ## Push Method
+ ### Push Method
  It is used to push items in linkedlist from rightside,O(1) operation
  
 ```
@@ -64,7 +64,7 @@ class Node{
       }
  ```
     
-## Pop method
+### Pop method
 It is used to remove the right most item and set the item before it as tail,it is O(n) method
 ```
 pop (){
@@ -85,7 +85,7 @@ pop (){
     return temp
     }
 ```
-## Unshift method
+### Unshift method
 This method is used to add items to a linkedlist from leftside and set it as head.
 ```
 unshift (){
@@ -100,4 +100,19 @@ unshift (){
     }
     this.length++
     return this
+}
+```
+### Shift method
+This method is used to remove the this.head in the linkedlist and it is done by assigning temp=head,head.next as head and removing temp
+```
+shift (){
+  if(!this.head) return undefined
+  let temp=this.head
+  this.head=this.head.next
+  temp.next=null
+  this.length--
+  if(this.length===0){
+  this.tail=null
+  }
+  return temp
 }
