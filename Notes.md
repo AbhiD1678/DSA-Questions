@@ -143,3 +143,19 @@ set(index,value){
     }
     
 ```
+### Insert method
+This method is used to insert a new node at a given index
+```
+insert(index,value){
+  if(index<0 || index>this.length) return false
+  if(index===0) return this.unshift(value)
+  if(index===this.length) return this.push(value)
+  
+  let temp=this.get(index-1)
+  newNode=new Node(value)
+  newNode.next=temp.next
+  temp.next=newNode
+  this.length++
+  return true
+}
+```
