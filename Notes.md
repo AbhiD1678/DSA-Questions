@@ -1,4 +1,4 @@
-## Review of Big O
+# Review of Big O
 
 O(1),O(log n) best as they take least number of operations,when the number of operations doesnot depend on n
 
@@ -9,7 +9,7 @@ O(nlogn)
 O(n^2),this for loop within loop
 
 
-## LinkedList
+# LinkedList
 
 class Node {
   constructor(value){
@@ -26,9 +26,9 @@ class LinkedList {
   }
  }
  
- ## Methods for linkedlist
+ # Methods for linkedlist
  
- # Push Method
+ ## Push Method
  It is used to push items in linkedlist from rightside,O(1) operation
  
  class Node{
@@ -60,5 +60,5 @@ class LinkedList {
       }
       }
     
-    #Pop method
+    ## Pop method
     
