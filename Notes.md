@@ -116,6 +116,7 @@ shift (){
   }
   return temp
 }
+```
 ### Get method 
 This method is used to get the value of node at a given index
 ```
@@ -128,3 +129,17 @@ get(index){
     temp=temp.next
   }return temp
   }
+```
+
+### Set method
+This method is used to change the value of a node in the given index.It uses get method
+```
+set(index,value){
+  let temp =this.get(index)
+  if(temp){
+    temp.value=value
+    return true
+    }return false
+    }
+    
+```
