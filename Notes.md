@@ -60,5 +60,21 @@ class LinkedList {
       }
       }
     
-    ## Pop method
-    
+## Pop method
+ pop (){
+  if(!this.head) return undefined
+  let pre = this.head
+  let temp = this.head
+  while(temp.next){
+    pre=temp
+    temp=temp.next
+    }
+   this.tail=pre
+   this.tail.next = null
+   this.length--
+   if(this.length===0){
+    this.head=null
+    this.tail=null
+    }
+    return temp
+    }
