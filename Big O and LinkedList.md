@@ -161,6 +161,7 @@ insert(index,value){
 ```
 ### Remove method
 This method is used to remove a node at a given index
+```
 remove(index){
   if(index===0) return this.shift()
   if(index===this.length -1) return this.pop()
