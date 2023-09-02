@@ -38,7 +38,7 @@ Only one valid answer exists.
 var two_sum=function TwoSum(nums,target){
     let numbertomap=[]
     for(let p = 0; p<nums.length;p++){
-        let constNumber=numbertomap[nums[p]]
+        let constNumber=numbertomap[nums[p]] //here we are finding number in the hash table so we are appending target value 9n hash table
         if(constNumber>=0){
             return [constNumber,p]
         }
