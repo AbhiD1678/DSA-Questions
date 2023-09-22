@@ -13,6 +13,7 @@ Output:  Minimum element is: 3
 */
 
 /*for sorting an array in ascending in Js,we need to call sort((a,b)=>a-b) */
+
 /*First apprach*/
 var findMaxMin = function(arr){
     let minmax={}
@@ -24,3 +25,4 @@ var findMaxMin = function(arr){
 
     return minmax
 }
+
