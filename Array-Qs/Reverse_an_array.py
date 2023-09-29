@@ -26,3 +26,16 @@ def ReverseArray1(arr,start,end):
         start+=1
         end-=1
     return arr
+# time complexity O(n) and space complexity O(1)
+
+# Using recursion method
+
+def ReverseArray2(arr,start,end):
+    if start<=end:
+        arr[start],arr[end]=arr[end],arr[start]
+        ReverseArray2(arr,start+1,end-1)
+
+# Using slicing method now
+
+def ReverseArray3(arr):
+    return arr[::-1]
