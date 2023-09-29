@@ -18,3 +18,11 @@ Output : arr[] = {2, 1, 5, 4}
 def reversearray(arr):
     return arr.reverse()
 
+# Better method
+
+def ReverseArray1(arr,start,end):
+    while start<end:
+        arr[start],arr[end]=arr[end],arr[start]
+        start+=1
+        end-=1
+    return arr
