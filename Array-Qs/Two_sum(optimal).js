@@ -43,7 +43,7 @@ var two_sum=function TwoSum(nums,target){
             return [constNumber,p]
         }
         else{
-            let value_target=target-number[p]
+            let value_target=target-nums[p]
             numbertomap[value_target]=p
         }
 
