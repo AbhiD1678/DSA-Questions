@@ -22,6 +22,7 @@ Constraints:
 1 <= nums.length <= 105
 -109 <= nums[i] <= 109
 '''
+//Method 1
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         hashmap={}
@@ -31,3 +32,12 @@ class Solution:
                 if nums[i+1] in hashmap:
                     return True
         return False
+
+//Method 2
+def containsDuplicate(self, nums: List[int]) -> bool:
+        arr1=sorted(nums)
+        for i in range(len(nums)-1):
+            if arr1[i]==arr1[i+1]:
+                return True
+        return False
+

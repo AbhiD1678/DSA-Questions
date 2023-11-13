@@ -39,8 +39,8 @@ var ContainDuplicate=function(nums){
 var ContainsDuplicate=function(nums){
     arr1=nums.sort()
     if(arr1.length>1){
-        for(let i=0;i<arr.length;i++){
-            if(arr1[i]===arr[i+1]){
+        for(let i=0;i<arr1.length-1;i++){
+            if(arr1[i]===arr1[i+1]){
                 return true
             }
         }
@@ -51,7 +51,7 @@ var ContainsDuplicate=function(nums){
 var containsDuplicate=function(nums){
     set1=new Set()
     if(nums.length===1) return false
-    for(let i =1;i<nums.length;i++){
+    for(let i =0;i<nums.length;i++){
         if(set1.has(nums[i])){
             return true
         }
