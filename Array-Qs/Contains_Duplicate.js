@@ -61,7 +61,7 @@ var containsDuplicate=function(nums){
 }
 //Method 4 using hash tables,O(n)
 var containsDuplicate=function(nums){
-    let hashmap=[]
+    let hashmap={}
     for(let i=0;i<nums.length;i++){
         if(hashmap(nums[i])){
             return true
