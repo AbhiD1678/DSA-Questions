@@ -25,7 +25,7 @@ const ReverseArray1=(arr,start,end)=>{
     while(start<end){
         let temp=arr[start]
         arr[start]=arr[end]
-        arr[end=temp]
+        arr[end]=temp
     
     }
     return arr
