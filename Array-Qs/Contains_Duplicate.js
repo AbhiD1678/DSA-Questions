@@ -52,10 +52,10 @@ var containsDuplicate=function(nums){
     set1=new Set()
     if(nums.length===1) return false
     for(let i =0;i<nums.length;i++){
-        if(set1.has(nums[i])){
+        if(set1.has(nums[i])){ // Remember about .has method here
             return true
         }
-        set1.add(nums[i])
+        set1.add(nums[i]) // remember about .add method here
     }
     return false
 }
