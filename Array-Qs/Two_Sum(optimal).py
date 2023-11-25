@@ -5,5 +5,5 @@ class Solution:
             target_value=target-number[p]
             if target_value in hashmap: #in this we are finding target value so we have to append number to the hash table
                 return [p,hashmap[target_value]]
-            hashmap[number[p]]=p
+            hashmap[number[p]]=p # here we are appending the number itselft as we are target_value and not nums[p]
         return []
