@@ -31,3 +31,9 @@ class Solution:
             rev=rev*10+rm
             temp=temp//10
         return rev==x
+
+
+# Method 2 slower as well
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        return str(x)==str(x)[::-1]
