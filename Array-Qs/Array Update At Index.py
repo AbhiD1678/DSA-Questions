@@ -30,3 +30,7 @@ Constraints:
 def updateArray(arr,n,idx,element):
     #code here
     arr.insert(idx,element)
+
+def updateArray(arr,n,idx,element):
+    #code here
+    arr[idx]=element
