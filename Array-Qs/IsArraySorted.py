@@ -30,3 +30,24 @@ class Solution:
             return 1
         else:
             return 0 
+        
+#M2
+class Solution:
+    def isSorted(self,arr,n):
+        #code here
+        isIncreasinglySorted, isDecreasinglySorted = False, False
+        for i in range(1, n):
+            if arr[i] < arr[i-1]:
+                break
+        else:
+            isIncreasinglySorted = True
+    
+        for i in range(n-1, 0, -1):
+            if arr[i] > arr[i-1]:
+                break
+        else:
+            isDecreasinglySorted = True
+        
+        return 1 if isIncreasinglySorted or isDecreasinglySorted else 0
+        
+
