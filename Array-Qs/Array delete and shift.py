@@ -30,3 +30,9 @@ def deleteFromArray(arr,n,idx):
     del arr[idx]
     arr.append(0)
 
+# Method 2 using remove as well
+    
+def deleteFromArray(arr,n,idx):
+    #code here
+    arr.remove(arr[idx])
+    arr.append(0)
