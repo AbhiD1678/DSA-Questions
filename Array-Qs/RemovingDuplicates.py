@@ -13,3 +13,13 @@ def removeDuplicates(arr,n):
     for i in range(1,res):
         arr[i]=temp[1]
     return res
+
+#M2 with time complexity of O(n) and space complexity of O(1)
+
+def remdup(arr,n):
+    res=1
+    for i in range(1,n):
+        if arr[res-1]!=arr[i]:
+            arr[res]=arr[i]
+            res+=1
+    return res
