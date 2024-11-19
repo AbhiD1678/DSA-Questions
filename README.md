@@ -1,5 +1,5 @@
 # DSA
-## First understand the questions correctly
+## First understand the questions correctly (try the below steps)
 >Step 1: Verify all the constraints
 >
 >Step 2: Solve for the best case test case, which means for the input/test cases we know.
